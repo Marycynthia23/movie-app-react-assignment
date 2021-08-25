@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.Header {
+  text-decoration: none;
+  font-family: lato;
+}
+.NavbarCont {
+  height: 80px;
+  background: #0d253f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.logoImg {
+  width: 150px;
+}
+
+.leftNav .dropdown {
+  color: #fff;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropbtn {
+  padding: 20px 20px;
+}
+
+.ulRyt {
+  display: inline-flex;
+  align-items: center;
+}
+.ulRyt li {
+  list-style-type: none;
+  padding: 0px 20px;
+  color: #fff;
+}
+.SearchIcon {
+  width: 25px;
+  height: 25px;
+}
+.borderEn {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 1px 3px;
+}
+.add {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .Header {
+    max-width: 100%;
+  }
+  .leftNav {
+    display: none;
+  }
+}

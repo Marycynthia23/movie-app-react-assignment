@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.MediaInfoCont {
+  width: 25%;
+  padding-left: 50px;
+  font-family: lato;
+}
+.SocialIcons {
+  display: flex;
+  justify-content: space-between;
+}
+.SocialIcons img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+  box-shadow: 1px 1px 1px 1px#ededed;
+  border-radius: 3px;
+}
+.box li {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 15px;
+}
+.details img {
+  width: 30px;
+  height: 30px;
+}
+.details p {
+  font-size: 11px;
+  line-height: 10px;
+  font-weight: 600;
+}
+.Keywords {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Keywords li {
+  border: 1px solid #ededed;
+  padding: 5px 10px;
+}
+@media screen and (max-width: 1000px) {
+  .MediaInfoCont {
+    display: flex;
+    flex-direction: row;
+    padding: none;
+  }
+
+  .details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box li {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .MediaInfoCont {
+    display: block;
+  }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.HeroContainer {
+  display: flex;
+  width: 85%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 50px;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: lato;
+}
+.HeroImage {
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #0d253f;
+}
+.Heroicons {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.icon,
+.Vote {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #1a1a1ada;
+  margin-left: 20px;
+}
+.Score,
+.Vote {
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #1a1a1ada;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.HeroDetails {
+  height: auto;
+  padding-left: 50px;
+}
+.Genre {
+  display: flex;
+  list-style-type: none;
+  font-size: 12px;
+}
+.borderEn {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 1px 3px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .HeroContainer {
+    min-width: 100%;
+    justify-content: center;
+    margin: auto 20px;
+  }
+  .HeroImage,
+  .HeroDetails {
+    max-width: 100%;
+    height: auto;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .HeroContainer {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .HeroImage,
+  .HeroDetails {
+    width: 100%;
+  }
+  .HeroDetails {
+    margin-left: -10px;
+    padding-top: 15px;
+  }
+}

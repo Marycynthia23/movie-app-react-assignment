@@ -1,0 +1,53 @@
+.SideBar {
+  width: 20%;
+  color: #000;
+}
+.SideBarBlock {
+  display: block;
+  margin-left: 50px;
+}
+.SideBarBlock div,
+.SideBarBlock input {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  width: 200px;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-shadow: 1px 1px 1px 1px #ededed;
+}
+input {
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ededed;
+}
+input:focus {
+  border: none;
+}
+span {
+  float: right;
+}
+@media screen and (max-width: 1000px) {
+  .SideBar {
+    width: 100%;
+  }
+  .SideBarBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 804px) {
+  .SideBar {
+    width: 100%;
+  }
+  .SideBarBlock {
+    display: block;
+    justify-content: space-between;
+  }
+  .SideBarBlock div,
+  .SideBarBlock input {
+    font-size: 14px;
+    width: 100%;
+    margin-left: -20px;
+  }
+}

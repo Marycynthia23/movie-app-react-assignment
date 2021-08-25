@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.LayoutCont {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  font-family: lato;
+}
+@media screen and (max-width: 1000px) {
+  .LayoutCont {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .LayoutCont {
+    flex-direction: column;
+    max-width: 97%;
+    flex-wrap: wrap;
+  }
+}
